@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS links (
+  id SERIAL PRIMARY KEY,
+  code VARCHAR(10) UNIQUE NOT NULL,
+  target_url TEXT NOT NULL,
+  total_clicks INT DEFAULT 0,
+  last_clicked TIMESTAMP NULL
+);
